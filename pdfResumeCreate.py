@@ -38,14 +38,14 @@ for information in Info:
     pdf.cell(0,5, f"{information['E-mail']}", align='L', ln=1)
     pdf.cell(0,5, f"{information['Contact No.']}", align='L', ln=1)
     pdf.ln(12)
-
+#Objective
     pdf.set_font('helvetica', "B", 15)
     pdf.cell(0, 10, f"{information['head1']}", 'BI', ln=1)
     pdf.ln(3)
     pdf.set_font('helvetica', "I", 12)
     pdf.multi_cell(0, 5, f"{information['Job_Obj']}", 'BI', align='L', ln=1)
     pdf.ln(10)
-
+#Education BG
     pdf.set_font('helvetica', "B", 15)
     pdf.cell(0, 10, f"{information['head2']}", ln=1)
     pdf.ln(5)
@@ -69,7 +69,7 @@ for information in Info:
     pdf.cell(40, 10, f"{information['Primary']}", align='L', ln=1)
     pdf.cell(0, 5, f"{information['Paddress']}", align='L', ln=1)
     pdf.ln(8)
-
+#Experience
     pdf.set_font('helvetica', "B", 15)
     pdf.cell(0, 10, f"{information['head3']}", 'BI', ln=1)
     pdf.ln(3)
@@ -80,7 +80,7 @@ for information in Info:
     pdf.set_font('helvetica', 'I', 12)
     pdf.cell(0, 5, f"{information['CompYr']}", align='L', ln=1)
     pdf.ln(8)
-
+#Skills
     pdf.set_font('helvetica', "B", 15)
     pdf.cell(0, 10, f"{information['head4']}", 'BI', ln=1)
     pdf.ln(3)
@@ -89,7 +89,7 @@ for information in Info:
     pdf.cell(0, 5, f"{information['2']}", align='L', ln=1)
     pdf.cell(0, 5, f"{information['3']}", align='L', ln=1)
     pdf.ln(8)
-
+#References
     pdf.set_font('helvetica', "B", 15)
     pdf.cell(0, 10, f"{information['head5']}", 'BI', ln=1)
     pdf.ln(3)
@@ -105,14 +105,5 @@ for information in Info:
 #Add signature
     pdf.image('sign.jpg', 100, 275, 100)
 
-
-
-
-
-
-
-
-    
-
-
-pdf.output('MAMPUSTI_JELEN KRIZ ANGEL.pdf')
+#Pdf Output
+pdf.output('MAMPUSTI_JELEN_KRIZ_ANGEL.pdf')
