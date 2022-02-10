@@ -15,11 +15,7 @@
 from fpdf import FPDF
 import json
 from ctypes import alignment
-
-#Header
-class PDF(FPDF):
-    def header(self):
-        self.image('RESUME_PIC.jpg', 10, 8, 40)
+        
 
 #Format
 pdf = FPDF('P','mm', 'Legal')
@@ -34,6 +30,7 @@ Info = json.loads(Create)
 
 # Personal Information
 for information in Info:
+    pdf.image('RESUME_PIC.jpg', 160, 6, 32)
     pdf.set_font('helvetica', "B", 12)
     pdf.cell(0,5, f"{information['Name']}", align='L', ln=1)
     pdf.set_font('helvetica', "", 12)
@@ -105,6 +102,8 @@ for information in Info:
 
     pdf.set_font('helvetica', "I", 12)
     pdf.multi_cell(0, 5, f"{information['closing']}", align='L', ln=1)
+#Add signature
+    pdf.image('sign.jpg', 100, 275, 100)
 
 
 
