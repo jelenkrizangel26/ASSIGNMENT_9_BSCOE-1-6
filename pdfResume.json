@@ -5,30 +5,32 @@
         "Address" : "#956 Mount Bachelor Bend, Quezon City",
         "Contact No." : "+63 976-088-2575",
         "E-mail" : "krizzyyyphoenix26@gmail.com",
+
         "head2" : "Objectives",
         "Job_Obj" : "To obtain suitable On-The-Job Training that will enable me to use my strong organizational skills, educational background and ability to work well with people.",
         "head3" : "Educational Background",
-        "Tertiary" : {
-            "name" : " Our Lady Of Fatima University",
-            "address" : "1 Esperanza Street, Hilltop Mansion Heights, Quezon City, 1100 Metro Manila" 
-    
-        "Secondary" : {
-            "name" : "Domingo Yu Chu National High School",
-            "address" : "Hawk St., Santa Cruz, Manila"
-     
-        "Primary" : {
-            "name" : "San Juan Elementary School",
-            "address" : " San Juan, Bulacan"
-     
-    
-    "Work Experience" : {
+        "Tertiary" : "Our Lady Of Fatima University",
+        "Taddress" : "1 Esperanza Street, Hilltop Mansion Heights, Quezon City, 1100 Metro Manila", 
+        "Secondary" :"Domingo Yu Chu National High School",
+        "Saddress" : "Hawk St., Santa Cruz, Manila",
+        "Primary" : "San Juan Elementary School",
+        "Paddress" : " San Juan, Bulacan",
+        
+        "head4" : "Work Experience",
         "position" : "Nurse Assistant",
         "Company" : "Gregorio del Pilar District Hospital",
-        "address" : "QVVH+4XR, Bulakan, Bulacan"
-
-    "Skills" : {
+        "CompAdd" : "QVVH+4XR, Bulakan, Bulacan",
+        
+        "head5" : "Skills",
         "1" : "Easy to communicate with others",
         "2" : "Ability to learn quick",
-        "3" : "Flexible"
+        "3" : "Flexible",
+
+        "head6" : "Character References",
+        "boss" : "Dr. Wilma Villanueva",
+        "Bpos" : "Head Nurse - Gregorio del Pilar District Hospital",
+        "Bcontact" : "+63 907-988-3541",
+
+        "closing" : "I hereby affix my signature to verify that the above information is true and correct to the best of my knowledge."
     }
 ]
