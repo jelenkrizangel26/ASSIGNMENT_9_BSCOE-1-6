@@ -19,8 +19,7 @@ from ctypes import alignment
 #Header
 class PDF(FPDF):
     def header(self):
-        self.image('RESUME_PIC', 10, 8, 40)
-        self.ln(3)
+        self.image('RESUME_PIC.jpg', 10, 8, 40)
 
 #Format
 pdf = FPDF('P','mm', 'Legal')
@@ -53,7 +52,62 @@ for information in Info:
     pdf.set_font('helvetica', "B", 15)
     pdf.cell(0, 10, f"{information['head2']}", ln=1)
     pdf.ln(5)
-    pdf.set_font('helvetica', "", 12)
+    pdf.set_font('helvetica', 'B', 12)
+    pdf.cell(40, 10, "Tertiary:")
+    pdf.set_font('helvetica', '', 12)
+    pdf.cell(40, 10, f"{information['Tertiary']}", align='L', ln=1)
+    pdf.cell(0, 5, f"{information['Taddress']}", align='L', ln=1)
+    pdf.ln(8)
+
+    pdf.set_font('helvetica', 'B', 12)
+    pdf.cell(40, 10, "Secondary:")
+    pdf.set_font('helvetica', '', 12)
+    pdf.cell(40, 10, f"{information['Secondary']}", align='L', ln=1)
+    pdf.cell(0, 5, f"{information['Saddress']}", align='L', ln=1)
+    pdf.ln(8)
+
+    pdf.set_font('helvetica', 'B', 12)
+    pdf.cell(40, 10, "Primary:")
+    pdf.set_font('helvetica', '', 12)
+    pdf.cell(40, 10, f"{information['Primary']}", align='L', ln=1)
+    pdf.cell(0, 5, f"{information['Paddress']}", align='L', ln=1)
+    pdf.ln(8)
+
+    pdf.set_font('helvetica', "B", 15)
+    pdf.cell(0, 10, f"{information['head3']}", 'BI', ln=1)
+    pdf.ln(3)
+    pdf.set_font('helvetica', 'B', 12)
+    pdf.cell(0, 5, f"{information['position']}", align='L', ln=1)
+    pdf.set_font('helvetica', '', 12)
+    pdf.cell(0, 5, f"{information['Company']}", align='L', ln=1)
+    pdf.set_font('helvetica', 'I', 12)
+    pdf.cell(0, 5, f"{information['CompYr']}", align='L', ln=1)
+    pdf.ln(8)
+
+    pdf.set_font('helvetica', "B", 15)
+    pdf.cell(0, 10, f"{information['head4']}", 'BI', ln=1)
+    pdf.ln(3)
+    pdf.set_font('helvetica', '', 12)
+    pdf.cell(0, 5, f"{information['1']}", align='L', ln=1)
+    pdf.cell(0, 5, f"{information['2']}", align='L', ln=1)
+    pdf.cell(0, 5, f"{information['3']}", align='L', ln=1)
+    pdf.ln(8)
+
+    pdf.set_font('helvetica', "B", 15)
+    pdf.cell(0, 10, f"{information['head5']}", 'BI', ln=1)
+    pdf.ln(3)
+    pdf.set_font('helvetica', 'B', 12)
+    pdf.cell(0, 5, f"{information['boss']}", align='L', ln=1)
+    pdf.set_font('helvetica', '', 12)
+    pdf.cell(0, 5, f"{information['Bpos']}", align='L', ln=1)
+    pdf.cell(0, 5, f"{information['Bcontact']}", align='L', ln=1)
+    pdf.ln(10)
+
+    pdf.set_font('helvetica', "I", 12)
+    pdf.multi_cell(0, 5, f"{information['closing']}", align='L', ln=1)
+
+
+
 
 
 
